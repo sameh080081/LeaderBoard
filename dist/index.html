@@ -6,22 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leader Board</title>
 <script defer src="/runtime.bundle.js"></script><script defer src="/index.bundle.js"></script></head>
-<body>
+<body class="font">
     <h1> Leader Board</h1>
-    <div>
-     <div>
+    <section class="main-cont">
+    <div class="score-cont">
+     <div class="score">
       <h2>Recent Scores</h2>
-      <button>Refresh</button>
+      <button class="refresh">Refresh</button>
      </div>
-     <ul>
-
+     <ul class="list">
+        <li>Name 1</li>
+        <li>Name 2</li>
+        <li>Name 3</li>
+        <li>Name 4</li>
+        <li>Name 5</li>
      </ul>
     </div>
-    <form>
+    <form class="score-form">
         <h2>Add your score</h2>
-        <input type="name" required>
-        <input type="number" required>
-        <button type="submit">Submit</button>
+        <input class="input" type="name" placeholder="your Name" required>
+        <input class="input" type="number" placeholder="your score" required>
+        <button type="submit" class="submit-btn">Submit</button>
     </form>
+</section>
 </body>
 </html>
