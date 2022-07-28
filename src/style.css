@@ -11,6 +11,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 50%;
+  margin-left: 50px;
 }
 
 .score {
@@ -22,11 +23,12 @@ h2 {
 
 .refresh {
   height: 30px;
+  box-shadow: 2px 2px 2px 2px #000;
 }
 
 .list {
   border-radius: 5px;
-  border: 1px solid;
+  border: 2px solid;
   list-style: none;
   padding: 1px;
 }
@@ -47,11 +49,12 @@ li:nth-child(even) {
 .input-score {
   height: 25px;
   border-radius: 5px;
-  border: 1px solid;
+  border: 2px solid;
 }
 
 .submit-btn {
   width: 100px;
   height: 30px;
   align-self: flex-end;
+  box-shadow: 2px 2px 2px 2px #000;
 }
