@@ -5,23 +5,22 @@ const refresh = document.querySelector('.refresh');
 const submit = document.querySelector('.submit-btn');
 const list = document.querySelector('.list');
 
-function display(arr) {
+const display = ((arr) => {
   list.innerHTML = '';
   arr.forEach((element) => {
     list.innerHTML += `
       <li>${element.user} : ${element.score}</li>
        `;
   });
-}
+});
 
-async function getScores(url) {
+const getScores = (async(url) => {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data.result);
   display(data.result);
-}
+});
 
-function addScore() {
+const addScore = (() => {
   const nameInput = document.querySelector('.input-name');
   const scoreInput = document.querySelector('.input-score');
   fetch(urlScore, {
@@ -38,7 +37,7 @@ function addScore() {
     .then((data) => console.log(data));
   nameInput.value = '';
   scoreInput.value = '';
-}
+});
 
 submit.addEventListener('click', () => {
   addScore();
