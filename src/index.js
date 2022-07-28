@@ -16,7 +16,7 @@ function display(arr) {
 
 async function getScores(url) {
   const response = await fetch(url);
-  let data = await response.json();
+  const data = await response.json();
   console.log(data.result);
   display(data.result);
 }
