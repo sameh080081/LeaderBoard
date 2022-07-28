@@ -14,7 +14,7 @@ const display = ((arr) => {
   });
 });
 
-const getScores = (async(url) => {
+const getScores = (async (url) => {
   const response = await fetch(url);
   const data = await response.json();
   display(data.result);
