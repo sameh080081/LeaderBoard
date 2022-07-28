@@ -1,5 +1,5 @@
 {
-  "name": "to-do-list",
+  "name": "leader-board",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,9 @@
     "start": "webpack serve --open",
     "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Fadahunsiseyi/todo-list-es6.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Fadahunsiseyi/todo-list-es6/issues"
-  },
-  "homepage": "https://github.com/Fadahunsiseyi/todo-list-es6#readme",
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",

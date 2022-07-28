@@ -43,7 +43,8 @@ li:nth-child(even) {
   height: 200px;
 }
 
-.input {
+.input-name,
+.input-score {
   height: 25px;
   border-radius: 5px;
   border: 1px solid;
